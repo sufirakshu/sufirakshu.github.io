@@ -1,29 +1,30 @@
-﻿.nav {
-   position: relative;
-   display: inline-block;
-   font-size: 14px;
-   font-weight: 900;
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #333641;
 }
-.nav-list {
+
+  
+article {
+    min-height: 100%;
+    display: grid; /* yay for Css grid!! */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
    
+header, main, footer {
+  padding: 1rem; 
+  text-align: center;
+ 
 }
-.nav-item {
-   float: left;
-   *display: inline;
-   zoom: 1;
+
+a {
+   background-color: #ffb6c1;
+   transition: background-color .5s;
 }
-.nav-item a {
-  display:block;
-  padding:15px 20px;
-  color:#FFF;
-  background:#34495E;
+a:hover {
+   background-color: #ff1493;
 }
-.nav-item:first-child a {
-  border-radius:5px 0 0 5px;
-}
-.nav-item:last-child a {
-  border-radius:0 5px 5px 0;
-}
-.nav-item a:hover {
-  background:#2C3E50;
-}
+
+ 
